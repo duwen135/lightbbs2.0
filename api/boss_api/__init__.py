@@ -8,4 +8,8 @@
 # @Site: 
 # @Time: 8月 06, 2021
 # ---
-from api import db
+from flask import Blueprint
+
+boss = Blueprint('boss_api', __name__)
+
+from api.boss_api import user

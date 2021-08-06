@@ -9,7 +9,7 @@
 # @Time: 8月 06, 2021
 # ---
 import os
-from boss_api import create_app
+from api import create_app
 
 app = create_app(os.getenv("FLASK_CONFIG") or "default")
 
